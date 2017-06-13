@@ -14,13 +14,6 @@
     <string name="firebase_status_fmt">Usuario: %s</string>
     <string name="loading">Cargando…</string>
 
-    <!-- contacto -->
-    <string name="contacto_titulo">DEPT. Informatica</string>
-    <string name="contacto_subtitulo">Tienes dudas?</string>
-    <string name="contacto_telefono">-625341986</string>
-    <string name="contacto_correo">-informatica@esdi.edu.es</string>
-    <string name="contacto_habla">Habla con nosotros</string>
-    <string name="contacto_chat">Chat</string>
 
     <!-- menu principal -->
     <string name="menuP_web">Página web</string>
@@ -35,8 +28,6 @@
     <string name="menuP_settings">Configuración</string>
     <string name="help">Ayuda</string>
 
-    <!-- Activity impresoras -->
-    <string name="tituloEstadoImpr">Estado de las impresoras de Sabadell</string>
 
     <!-- Settings -->
     <string name="confTemaTitulo">Usar el tema claro: </string>
@@ -55,11 +46,7 @@
     <string name="finalizar"> Finalizar </string>
     <string name="cancelar"> Cancelar </string>
 
-    <!-- Dispoaulas -->
-    <string name="seleccionarhora"> Seleccionar hora </string>
-    <string name="seleccionardia"> Seleccionar dia</string>
-    <string name="descrMapa">El mapa muestra la disponibilidad actual de las aulas</string>
-
-    <!-- Tutoriales -->
-    <string name="visualizaPdf">Visualizar PDF</string>
+    <!-- Insertar repostaje -->
+    <string name="Km"> Kilometros </string>
+    <string name="L"> Litros </string>
 </resources>

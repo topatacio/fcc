@@ -13,14 +13,6 @@
     <string name="firebase_status_fmt">User: %s</string>
     <string name="loading">Loading…</string>
 
-    <!-- contacto -->
-    <string name="contacto_titulo">I.T. Dept.</string>
-    <string name="contacto_subtitulo">Any question?</string>
-    <string name="contacto_telefono">-625341986</string>
-    <string name="contacto_correo">-informatica@esdi.edu.es</string>
-    <string name="contacto_habla">Speak with us</string>
-    <string name="contacto_chat">Chat</string>
-
     <!-- menu principal -->
     <string name="menuP_web">Web page</string>
     <string name="menuP_tutoriales">Tutorials</string>
@@ -34,8 +26,6 @@
     <string name="menuP_settings">Settings</string>
     <string name="help">Help</string>
 
-    <!-- Acitvity impresoras -->
-    <string name="tituloEstadoImpr">Sabadell\'s printers status:</string>
 
     <!-- Configuracion -->
     <string name="confTemaTitulo">Use the light theme: </string>
@@ -54,13 +44,9 @@
     <string name="finalizar"> End </string>
     <string name="cancelar"> Cancel </string>
 
-    <!-- Dispoaulas -->
-    <string name="seleccionarhora"> Select hour </string>
-    <string name="seleccionardia"> Select day</string>
-    <string name="descrMapa">The map shows the current availability of the classrooms</string>
-
-    <!-- Tutoriales -->
-    <string name="visualizaPdf">View PDF</string>
+    <!-- Insertar repostaje -->
+    <string name="Km"> Kilometers </string>
+    <string name="L"> Liters </string>
 
 
 </resources>

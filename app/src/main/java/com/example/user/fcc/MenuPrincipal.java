@@ -6,8 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.user.fcc.empresas.Empresas;
-import com.example.user.fcc.tutoriales.Tutoriales;
+
 // Para no tener que crear varios menús, tenemos que añadir un control del tipo de cuenta logeada
 //  (Lo podemos hacer con un extra del intent) y esconder o mostrar los botones que toquen.
 
@@ -109,6 +108,9 @@ public class MenuPrincipal extends BaseActivity {
 
     }
     private void lanzarPaginaWeb(){
+        Intent intent = new Intent(MenuPrincipal.this,InsertarRepostaje.class);
+        intent.putExtras(b);
+        startActivity(intent);
 
     }
     private void lanzarContacto(){
@@ -130,15 +132,11 @@ public class MenuPrincipal extends BaseActivity {
     }
 
     private void lanzarEmpresas(){
-        Intent intent = new Intent(MenuPrincipal.this,Empresas.class);
-        intent.putExtras(b);
-        startActivity(intent);
+
     }
 
     private void lanzarTutoriales(){
-        Intent intent = new Intent(MenuPrincipal.this,Tutoriales.class);
-        intent.putExtras(b);
-        startActivity(intent);
+
     }
 
 }
