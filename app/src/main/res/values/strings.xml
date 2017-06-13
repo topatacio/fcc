@@ -1,0 +1,66 @@
+<resources>
+    <!-- main activity -->
+    <string name="app_name">ProyectoEsdi</string>
+    <string name="title_activity_disponibilidad">Availabilty</string>
+    <string name="google_title_text">Google Sign In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="acceso">Access:</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="disconnect">Log out</string> <!-- Seria mejor "log out" no? -->
+    <string name="log_in">Log In</string>
+    <string name="google_status_fmt">Account: %s</string>
+    <string name="firebase_status_fmt">User: %s</string>
+    <string name="loading">Loading…</string>
+
+    <!-- contacto -->
+    <string name="contacto_titulo">I.T. Dept.</string>
+    <string name="contacto_subtitulo">Any question?</string>
+    <string name="contacto_telefono">-625341986</string>
+    <string name="contacto_correo">-informatica@esdi.edu.es</string>
+    <string name="contacto_habla">Speak with us</string>
+    <string name="contacto_chat">Chat</string>
+
+    <!-- menu principal -->
+    <string name="menuP_web">Web page</string>
+    <string name="menuP_tutoriales">Tutorials</string>
+    <string name="menuP_contacto">Contact</string>
+    <string name="menuP_aulas">Classroom\navailability</string>
+    <string name="menuP_mensajes">Messages</string>
+    <string name="menuP_incidencias">Incidences</string>
+    <string name="menuP_empresas">Business\nPartners</string>
+
+    <!-- Menu opciones -->
+    <string name="menuP_settings">Settings</string>
+    <string name="help">Help</string>
+
+    <!-- Acitvity impresoras -->
+    <string name="tituloEstadoImpr">Sabadell\'s printers status:</string>
+
+    <!-- Configuracion -->
+    <string name="confTemaTitulo">Use the light theme: </string>
+    <string name="confLenguaTitulo">Displayed language:</string>
+    <string name="confLenguaDescr">Change the app\'s language without changing your phone\'s one</string>
+
+    <!-- Mensajes -->
+    <string name="sugerencias"> Suggestions </string>
+    <string name="incidencias"> Incidences</string>
+    <string name="consultas"> Queries </string>
+    <string name="equipo"> Equipment </string>
+    <string name="titulo"> Title </string>
+    <string name="escanear"> Scan QR </string>
+    <string name="descripcion"> Description </string>
+    <string name="nuevo"> New </string>
+    <string name="finalizar"> End </string>
+    <string name="cancelar"> Cancel </string>
+
+    <!-- Dispoaulas -->
+    <string name="seleccionarhora"> Select hour </string>
+    <string name="seleccionardia"> Select day</string>
+    <string name="descrMapa">The map shows the current availability of the classrooms</string>
+
+    <!-- Tutoriales -->
+    <string name="visualizaPdf">View PDF</string>
+
+
+</resources>

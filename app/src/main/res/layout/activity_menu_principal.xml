@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.fcc.MenuPrincipal">
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_below="@id/txtEmail"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtTitulo">
+
+        <GridLayout
+            android:id="@+id/GridLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="7">
+
+
+            <Button
+                android:id="@+id/btnpaginaweb"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:drawableTop="@drawable/internet"
+                android:text="@string/menuP_web" />
+
+            <Button
+                android:id="@+id/btnTutoriales"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:drawableTop="@drawable/grupo"
+                android:text="@string/menuP_tutoriales" />
+
+            <Button
+                android:id="@+id/btnContacto"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:drawableTop="@drawable/manos"
+                android:text="@string/menuP_contacto" />
+
+            <Button
+                android:id="@+id/btndispoAulas"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:drawableTop="@drawable/monitor"
+                android:text="@string/menuP_aulas" />
+
+            <Button
+                android:id="@+id/btnMensajes"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:drawableTop="@drawable/sobre"
+                android:text="@string/menuP_mensajes" />
+
+            <Button
+                android:id="@+id/btnEmpresas"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:drawableTop="@drawable/fabrica"
+                android:text="@string/menuP_empresas" />
+
+            <Button
+                android:id="@+id/btnIncidencias"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:drawableTop="@drawable/cruz"
+                android:text="@string/menuP_incidencias" />
+        </GridLayout>
+    </ScrollView>
+
+</RelativeLayout>

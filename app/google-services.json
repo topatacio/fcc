@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "343716501745",
+    "firebase_url": "https://fuel-consumption-calcula-7d28c.firebaseio.com",
+    "project_id": "fuel-consumption-calcula-7d28c",
+    "storage_bucket": "fuel-consumption-calcula-7d28c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343716501745:android:6ea105740cdfb8df",
+        "android_client_info": {
+          "package_name": "com.example.jr.firedatabasebeta01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343716501745-76d1kqm4nm2afopnq6sf54ur7gvdiklm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jr.firedatabasebeta01",
+            "certificate_hash": "df9416bfceebf847082bf4d50163525a39d6a736"
+          }
+        },
+        {
+          "client_id": "343716501745-k2sv9biptmp338nplo68bauv71tjjqa4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLGpYEeNKBYPzJVFFcCEtAHqyLo3Aga2U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343716501745-k2sv9biptmp338nplo68bauv71tjjqa4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343716501745:android:0eccddf923758717",
+        "android_client_info": {
+          "package_name": "com.example.user.fcc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343716501745-2fidre37uv7cfrkldm1p6kl6fobkk3h9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.fcc",
+            "certificate_hash": "df9416bfceebf847082bf4d50163525a39d6a736"
+          }
+        },
+        {
+          "client_id": "343716501745-k2sv9biptmp338nplo68bauv71tjjqa4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLGpYEeNKBYPzJVFFcCEtAHqyLo3Aga2U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343716501745-k2sv9biptmp338nplo68bauv71tjjqa4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.fcc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.user.fcc.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.user.fcc.MenuPrincipal" />
+        <activity android:name="com.example.user.fcc.PaginaWeb" />
+        <activity android:name="com.example.user.fcc.Contacto" />
+        <activity android:name="com.example.user.fcc.DispoAulas" />
+        <activity android:name="com.example.user.fcc.GLPI" />
+        <activity android:name="com.example.user.fcc.Settings" />
+        <activity android:name="com.example.user.fcc.QRscanner" />
+
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAwUhDtNOyH1yEDnwGssnVawfls6eiXSfg" />
+
+        <uses-feature
+            android:glEsVersion="0x00020000"
+            android:required="true" />
+
+        <!-- <activity android:name=".GoogleSignInActivity"></activity> -->
+        <activity android:name="com.example.user.fcc.Mensajes" />
+        <activity android:name="com.example.user.fcc.tutoriales.Tutoriales" />
+        <activity android:name="com.example.user.fcc.empresas.Empresas" />
+        <activity android:name="com.example.user.fcc.empresas.EmpresaExtend" />
+        <activity android:name="com.example.user.fcc.VistaPDF" />
+        <activity android:name="com.example.user.fcc.tutoriales.TutorialExtend" />
+        <activity android:name="com.example.user.fcc.Ayuda"></activity>
+    </application>
+
+</manifest>

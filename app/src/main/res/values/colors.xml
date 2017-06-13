@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a6a7bf</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_100">#F5F5F5</color>
+    <!--mensajes-->
+    <color name="incids01">#F5F5F5</color>
+
+    <!--desconocido-->
+    <color name="textSecondary">#F5F5F5</color>
+    <color name="white">#F5F5F5</color>
+</resources>
