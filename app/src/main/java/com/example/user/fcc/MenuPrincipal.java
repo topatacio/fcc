@@ -109,14 +109,10 @@ public class MenuPrincipal extends BaseActivity {
 
     }
     private void lanzarPaginaWeb(){
-        Intent intent = new Intent(MenuPrincipal.this,PaginaWeb.class);
-        intent.putExtras(b);
-        startActivity(intent);
+
     }
     private void lanzarContacto(){
-        Intent intent = new Intent(MenuPrincipal.this,Contacto.class);
-        intent.putExtras(b);
-        startActivity(intent);
+
     }
 
     private void lanzarMensajes3(){
@@ -126,15 +122,11 @@ public class MenuPrincipal extends BaseActivity {
         startActivity(intent);
     }
     private void lanzarDispo(){
-        Intent intent = new Intent(MenuPrincipal.this,DispoAulas.class);
-        intent.putExtras(b);
-        startActivity(intent);
+
     }
 
     private void lanzarIncidencias(){
-        Intent intent = new Intent(MenuPrincipal.this,GLPI.class);
-        intent.putExtras(b);
-        startActivity(intent);
+
     }
 
     private void lanzarEmpresas(){

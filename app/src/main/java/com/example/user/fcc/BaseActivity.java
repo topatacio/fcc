@@ -51,10 +51,7 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
     private void lanzaAyuda(){
-        Bundle extras = getIntent().getExtras();
-        Intent intent = new Intent(this,Ayuda.class);
-        intent.putExtras(extras);
-        startActivity(intent);
+
     }
 
     private void lanzarSettings(){

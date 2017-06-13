@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import com.example.user.fcc.BaseActivity;
 import com.example.user.fcc.R;
-import com.example.user.fcc.VistaPDF;
 
 public class TutorialExtend extends BaseActivity {
 
@@ -45,10 +44,7 @@ public class TutorialExtend extends BaseActivity {
 
         btnPdf.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
-                Intent intent = new Intent(TutorialExtend.this,VistaPDF.class);
-                //emvio el nom para distinguir entre pdfs
-                intent.putExtra("nombre",nom);
-                startActivity(intent);
+
 
             }
         });

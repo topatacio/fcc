@@ -19,10 +19,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.user.fcc.MenuPrincipal" />
-        <activity android:name="com.example.user.fcc.PaginaWeb" />
-        <activity android:name="com.example.user.fcc.Contacto" />
-        <activity android:name="com.example.user.fcc.DispoAulas" />
-        <activity android:name="com.example.user.fcc.GLPI" />
         <activity android:name="com.example.user.fcc.Settings" />
         <activity android:name="com.example.user.fcc.QRscanner" />
 
@@ -48,9 +44,7 @@
         <activity android:name="com.example.user.fcc.tutoriales.Tutoriales" />
         <activity android:name="com.example.user.fcc.empresas.Empresas" />
         <activity android:name="com.example.user.fcc.empresas.EmpresaExtend" />
-        <activity android:name="com.example.user.fcc.VistaPDF" />
         <activity android:name="com.example.user.fcc.tutoriales.TutorialExtend" />
-        <activity android:name="com.example.user.fcc.Ayuda"></activity>
     </application>
 
 </manifest>
