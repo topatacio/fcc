@@ -193,7 +193,7 @@ public class Mensajes extends BaseActivity {
 
     //metodo que recoge la pestaña seleccionada y muestra el arrayTexto segun toque
     public void cargaTexto(final String tabId) {
-        DBmensajes conn = new DBmensajes(tabId);
+        DBvehiculos conn = new DBvehiculos(tabId);
         //switch con el resultado de la posicion seleccionadan,
         switch (tabId) {
             case "Sugerencia":
@@ -324,7 +324,7 @@ public class Mensajes extends BaseActivity {
         //crea una lista dinamica y se carga con los elementos recibidos de la BD firebase
 
 
-        DBmensajes conn = new DBmensajes(miTab);
+        DBvehiculos conn = new DBvehiculos(miTab);
         datosCorreos = conn.listaCorreos();
 
         //creacion del adaptador del spinner de seleccion de conversaciones de consulta
@@ -354,7 +354,7 @@ public class Mensajes extends BaseActivity {
                 Log.d(TAGLOG, "----------------------- pasando9---------------" + datosCorreos.size());
                 //llama a muestra mensaje con el correo seleccionado a mostrar o con "todos" si no se ha seleccionado ninguno
                 //muestraMensajes(correo, miTab);
-                DBmensajes conn = new DBmensajes(miTab);
+                DBvehiculos conn = new DBvehiculos(miTab);
                 conn.listaMensajes(correo, miTab);
 
             }
@@ -436,7 +436,7 @@ public class Mensajes extends BaseActivity {
         }
 
         //sube el arrayTexto entrado a firebase, al nodo del usuario
-        //  dbMensajes.child(txtEmail.getText().toString()).push().setValue(inChat.getText().toString());
+        //  dbVehiculos.child(txtEmail.getText().toString()).push().setValue(inChat.getText().toString());
         dbEnviar.push().setValue(envio);
 
     }
@@ -462,7 +462,7 @@ public class Mensajes extends BaseActivity {
         //instancia la clase que crea una conexion con la base de datos y llama al metodo de borrar
         //nodos pasandole como parametro el nodo almacenado mediante la clase mensajesincidencias
         //segun la incidencia seleccionada en el metodo muestraincidencias
-        DBmensajes conn = new DBmensajes(mytab);
+        DBvehiculos conn = new DBvehiculos(mytab);
         conn.borrar(mi.getNodo());
     }
 

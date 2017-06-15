@@ -1,17 +1,9 @@
 <resources>
     <!-- main activity -->
-    <string name="app_name">ProyectoEsdi</string>
-    <string name="title_activity_disponibilidad">Availabilty</string>
-    <string name="google_title_text">Google Sign In</string>
-    <string name="signed_out">Signed Out</string>
-    <string name="acceso">Access:</string>
-    <string name="desc_firebase_lockup">Firebase logo and name</string>
-    <string name="sign_out">Sign Out</string>
-    <string name="disconnect">Log out</string> <!-- Seria mejor "log out" no? -->
-    <string name="log_in">Log In</string>
-    <string name="google_status_fmt">Account: %s</string>
-    <string name="firebase_status_fmt">User: %s</string>
-    <string name="loading">Loading…</string>
+    <string name="app_name">Consumption Calculator</string>
+    <string name="marca">Brand</string>
+    <string name="entrar">Enter</string>
+
 
     <!-- menu principal -->
     <string name="menuP_web">Web page</string>
@@ -47,6 +39,8 @@
     <!-- Insertar repostaje -->
     <string name="Km"> Kilometers </string>
     <string name="L"> Liters </string>
+    <string name="insertar"> Insert </string>
+    <string name="camposVacios"> there are empty fields </string>
 
 
 </resources>

@@ -16,9 +16,9 @@ import java.util.ArrayList;
  * Created by JR on 21/04/2017.
  */
 
-public class DBmensajes {
+public class DBvehiculos {
 
-    DatabaseReference dbMensajes;
+    DatabaseReference dbVehiculos;
     private ArrayList<String> datos;
     private ArrayList<MensajesIncidencias> datos2;
     String texto;
@@ -26,13 +26,58 @@ public class DBmensajes {
     private static final String TAGLOG = "firebase-db";
 
 
-    public DBmensajes(String miTab) {
+
+    public DBvehiculos() {
         //instancia la base de datos de firebase
-        dbMensajes = FirebaseDatabase.getInstance().getReference().child(miTab);
+        dbVehiculos = FirebaseDatabase.getInstance().getReference().child("vehiculos");
         datos = null;
         datos2 = null;
         //texto ="";
     }
+
+    public DBvehiculos(String miTab) {
+        //instancia la base de datos de firebase
+        dbVehiculos = FirebaseDatabase.getInstance().getReference().child(miTab);
+        datos = null;
+        datos2 = null;
+        //texto ="";
+    }
+
+
+    public ArrayList<String> listaMarcas() {
+
+        datos = new ArrayList<String>();
+        //el primer dato del spiner sera siempre "nueva"
+        datos.add("marca");
+
+        Query dbQuery = dbVehiculos.orderByKey();
+        ValueEventListener eventListener = new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot nodoVehiculos) {
+                //reinicia datos para no duplicar las entradas anteriores
+                datos.clear();
+             //   datos.add("nueva");
+                //en cada bucle carga un nuevo elemento a la lista
+                for (DataSnapshot childDataSnapshot : nodoVehiculos.getChildren()) {
+
+                        datos.add(childDataSnapshot.getKey().toString());
+
+                }
+            }
+
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                //     Log.e(TAGLOG, "<------- Error DBvehiculos listaCorreos -------->", databaseError.toException());
+            }
+        };
+
+        //  Log.d(TAGLOG, "======= paso por aqui 2 ==========   " );
+        dbQuery.addValueEventListener(eventListener);
+        return datos;
+    }
+
+
 
     public ArrayList<String> listaCorreos() {
 
@@ -40,7 +85,7 @@ public class DBmensajes {
         //el primer dato del spiner sera siempre "todos"
         datos.add("todos");
 
-        Query dbQuery = dbMensajes.orderByKey();
+        Query dbQuery = dbVehiculos.orderByKey();
         ValueEventListener eventListener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot nodoUsuario) {
@@ -62,7 +107,7 @@ public class DBmensajes {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-           //     Log.e(TAGLOG, "<------- Error DBmensajes listaCorreos -------->", databaseError.toException());
+           //     Log.e(TAGLOG, "<------- Error DBvehiculos listaCorreos -------->", databaseError.toException());
             }
         };
 
@@ -75,7 +120,7 @@ public class DBmensajes {
     public void listaMensajes(final String correo, final String miTab) {
 
         //hace una consulta para mostrar los mensajes ordenados por fecha
-        Query dbQuery = dbMensajes.orderByKey();
+        Query dbQuery = dbVehiculos.orderByKey();
 
 
         ValueEventListener eventListener = new ValueEventListener() {
@@ -105,7 +150,7 @@ public class DBmensajes {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-             //   Log.d(TAGLOG, "<-------- Error DBmensajes listaMensajes ------>", databaseError.toException());
+             //   Log.d(TAGLOG, "<-------- Error DBvehiculos listaMensajes ------>", databaseError.toException());
             }
 
         };
@@ -120,7 +165,7 @@ public class DBmensajes {
     public void listaIncidencias(final Context ctx) {
 
         //hace una consulta para mostrar los mensajes ordenados por fecha
-        Query dbQuery = dbMensajes.orderByKey();
+        Query dbQuery = dbVehiculos.orderByKey();
 
 
         ValueEventListener eventListener = new ValueEventListener() {
@@ -147,7 +192,7 @@ public class DBmensajes {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-              //  Log.d(TAGLOG, "<-------- Error DBmensajes listaMensajes ------>", databaseError.toException());
+              //  Log.d(TAGLOG, "<-------- Error DBvehiculos listaMensajes ------>", databaseError.toException());
             }
 
         };
@@ -160,7 +205,7 @@ public class DBmensajes {
 
     public void borrar(String nodo){
 
-        dbMensajes.child(nodo).removeValue();
+        dbVehiculos.child(nodo).removeValue();
  Log.d(TAGLOG, "----------------------- nodooooo---------------" + nodo);
     }
 

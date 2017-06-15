@@ -5,6 +5,14 @@
     android:orientation="vertical">
 
 
+    <EditText
+        android:id="@+id/txtVehiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
     <TextView
         android:id="@+id/txtLitros"
         android:layout_width="match_parent"
@@ -30,5 +38,11 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/insertar" />
 
 </LinearLayout>

@@ -62,6 +62,7 @@ public class BaseActivity extends AppCompatActivity {
         intent.putExtras(extras);
         startActivity(intent);
     }
+    /*
     @VisibleForTesting
     public ProgressDialog mProgressDialog;
 
@@ -86,7 +87,7 @@ public class BaseActivity extends AppCompatActivity {
         super.onStop();
         hideProgressDialog();
     }
-
+*/
     private void checkTheme() {
         int version = android.os.Build.VERSION.SDK_INT;
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());

@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- main activity -->
-    <string name="app_name">ProyectoEsdi</string>
-    <string name="title_activity_disponibilidad">Disponibilidad</string>
-    <string name="google_title_text">Iniciar sesión</string>
-    <string name="signed_out">Desconectado</string>
-    <string name="acceso">Acceso:</string>
-    <string name="desc_firebase_lockup">Nombre y logo de Firebase</string>
-    <string name="sign_out">Salir</string>
-    <string name="disconnect">Desconectar</string>
-    <string name="log_in">Entrar</string>
-    <string name="google_status_fmt">Cuenta: %s</string>
-    <string name="firebase_status_fmt">Usuario: %s</string>
-    <string name="loading">Cargando…</string>
+    <string name="app_name">Calculadora de Consumo</string>
+    <string name="entrar">Entrar</string>
+    <string name="marca">Marca</string>
 
 
     <!-- menu principal -->
@@ -49,4 +40,6 @@
     <!-- Insertar repostaje -->
     <string name="Km"> Kilometros </string>
     <string name="L"> Litros </string>
+    <string name="insertar"> Insertar </string>
+    <string name="camposVacios"> hay campos vacios </string>
 </resources>

@@ -98,6 +98,7 @@ public class MenuPrincipal extends BaseActivity {
             }
         });
 
+        /*
         //solo un administrador puede entrar a incidencias
         if (b.getString("rol").equalsIgnoreCase("administrador")){
             btnIncidencias.setVisibility(View.VISIBLE);
@@ -105,7 +106,7 @@ public class MenuPrincipal extends BaseActivity {
             btnIncidencias.setVisibility(View.GONE);
         }
         //btnVacio.setVisibility(View.GONE);
-
+*/
     }
     private void lanzarPaginaWeb(){
         Intent intent = new Intent(MenuPrincipal.this,InsertarRepostaje.class);
