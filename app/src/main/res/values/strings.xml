@@ -2,7 +2,11 @@
     <!-- main activity -->
     <string name="app_name">Consumption Calculator</string>
     <string name="marca">Brand</string>
-    <string name="entrar">Enter</string>
+    <string name="modelo">model</string>
+    <string name="matricula">license</string>
+    <string name="nuevo_dato">insert data</string>
+    <string name="ok">ok</string>
+    <string name="entrar"></string>
 
 
     <!-- menu principal -->

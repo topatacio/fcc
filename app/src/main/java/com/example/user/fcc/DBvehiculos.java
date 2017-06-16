@@ -48,7 +48,7 @@ public class DBvehiculos {
 
         datos = new ArrayList<String>();
         //el primer dato del spiner sera siempre "nueva"
-        datos.add("marca");
+        datos.add("nueva");
 
         Query dbQuery = dbVehiculos.orderByKey();
         ValueEventListener eventListener = new ValueEventListener() {
@@ -56,7 +56,7 @@ public class DBvehiculos {
             public void onDataChange(DataSnapshot nodoVehiculos) {
                 //reinicia datos para no duplicar las entradas anteriores
                 datos.clear();
-             //   datos.add("nueva");
+                datos.add("nueva");
                 //en cada bucle carga un nuevo elemento a la lista
                 for (DataSnapshot childDataSnapshot : nodoVehiculos.getChildren()) {
 
@@ -76,6 +76,73 @@ public class DBvehiculos {
         dbQuery.addValueEventListener(eventListener);
         return datos;
     }
+
+    public ArrayList<String> listaModelos(final String marca) {
+
+        datos = new ArrayList<String>();
+        //el primer dato del spiner sera siempre "nueva"
+        datos.add("nuevo");
+
+        Query dbQuery = dbVehiculos.orderByKey();
+        ValueEventListener eventListener = new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot nodoVehiculos) {
+                //reinicia datos para no duplicar las entradas anteriores
+                datos.clear();
+                datos.add("nuevo");
+                //en cada bucle carga un nuevo elemento a la lista
+                for (DataSnapshot childDataSnapshot : nodoVehiculos.child(marca).getChildren()) {
+
+                    datos.add(childDataSnapshot.getKey().toString());
+
+                }
+            }
+
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                //     Log.e(TAGLOG, "<------- Error DBvehiculos listaCorreos -------->", databaseError.toException());
+            }
+        };
+
+        //  Log.d(TAGLOG, "======= paso por aqui 2 ==========   " );
+        dbQuery.addValueEventListener(eventListener);
+        return datos;
+    }
+
+    public ArrayList<String> listaMatriculas() {
+
+        datos = new ArrayList<String>();
+        //el primer dato del spiner sera siempre "nueva"
+        datos.add("nuevo");
+
+        Query dbQuery = dbVehiculos.orderByKey();
+        ValueEventListener eventListener = new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot nodoVehiculos) {
+                //reinicia datos para no duplicar las entradas anteriores
+                datos.clear();
+                datos.add("nuevo");
+                //en cada bucle carga un nuevo elemento a la lista
+                for (DataSnapshot childDataSnapshot : nodoVehiculos.getChildren()) {
+
+                    datos.add(childDataSnapshot.getKey().toString());
+
+                }
+            }
+
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                //     Log.e(TAGLOG, "<------- Error DBvehiculos listaCorreos -------->", databaseError.toException());
+            }
+        };
+
+        //  Log.d(TAGLOG, "======= paso por aqui 2 ==========   " );
+        dbQuery.addValueEventListener(eventListener);
+        return datos;
+    }
+
 
 
 

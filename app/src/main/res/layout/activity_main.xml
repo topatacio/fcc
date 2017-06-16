@@ -20,6 +20,53 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.12" />
 
+
+    <TextView
+        android:id="@+id/txtModelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:text="TextView" />
+
+    <Spinner
+        android:id="@+id/spModelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12" />
+
+
+    <TextView
+        android:id="@+id/txtMatricula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:text="TextView" />
+
+    <Spinner
+        android:id="@+id/spMatricula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12" />
+
+
+    <EditText
+        android:id="@+id/txtNuevo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/nuevo_dato" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sign_out_and_disconnect"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ok"
+        android:theme="@style/ThemeOverlay.MyDarkButton" />
+
     <Button
         android:id="@+id/btnEntrar"
         android:layout_width="121dp"
